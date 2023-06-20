@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            height: 60px;
+        }
+        .navbar .logo {
+            float: left;
+            margin-left: 50px;
+            line-height: 60px;
+            vertical-align: middle;
+        }
+        .navbar .logo img {
+            height: 20px;
+        }
+        .navbar .menu1 {
+            float: right;
+            list-style: none;
+        }
+        .navbar .menu2 {
+            float: right;
+            list-style: none;
+        }
+        .navbar .menu1 li {
+            float: left;
+            margin-right: 50px;
+            line-height: 60px;
+        }
+        .navbar .menu2 li {
+            float: left;
+            margin-right: 50px;
+            line-height: 60px;
+        }
+        .navbar .menu1 a {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #752EFF;
+        }
+        .navbar .menu1 a:hover {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background-color: #752EFF;
+            border-radius: 5px;
+        }
+        .navbar .menu2 a {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+        .navbar .menu2 a:hover {
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: solid 2px #752EFF;
+        }
+        .header {
+            height: 450px;
+            background-image: url("https://i.postimg.cc/mrS9VGRd/hero-header.webp");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            line-height: 450px;
+        }
+        .header-info {
+            display: inline-block;
+            vertical-align: middle;
+            line-height: normal;
+            text-align: center;
+        }
+        .intro-container {
+            margin-top: 60px;
+            vertical-align: middle;
+            height: 380px;
+            line-height: 40px;
+        }
+        .intro-container h1 {
+            font-size: 30px;
+            margin-left: 100px;
+            float: left;
+        }
+        .intro-container p {
+            font-size: 20px;
+            margin-left: 100px;
+            clear: left;
+        }
+        #introimg {
+            float: right;
+        }
+        h3 {
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 60px;
+            color: #752EFF;
+        }
+        .news{
+            margin-left: auto;
+            margin-right: auto;
+            width: 960px;
+            margin-bottom: 30px;
+        }
+        .news h2 {
+            margin-bottom: 30px;
+        }
+        .poster {
+            width: 500px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+        .line {
+            border-bottom: 2px dashed #752EFF;
+            width: 960px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+        .link a {
+            color: #752EFF;
+        }
+        .link a:hover {
+            color: white;
+            background-color: #752EFF;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        h4 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            color: #752EFF;
+        }
+        .culture-container {
+            margin-top: 60px;
+        }
+        .content-container {
+            width: 990px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .content-item {
+            float: left;
+            margin-left: 15px;
+            margin-right: 15px;
+        }   
+        .content-item img {
+            width: 300px;
+            height: 160px;
+        }
+        .clearfix {
+            clear: both;
+        }
+        .culture-button {
+            display: block;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+	        font-size: 16px;
+            font-weight: bold;
+	        text-decoration: none;
+	        width: 240px;
+	        padding: 16px 26px;
+            text-align: center;
+            color: #752EFF;
+            border: 2px solid #752EFF;
+            border-radius: 10px;
+        }
+        .culture-button:hover {
+            color: white;
+            background-color: #752EFF;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            height: 150px;
+            margin-top: 60px;
+            padding-top: 35px;
+        }
+        .footer p {
+            font-size: 13px;
+            color: #AAAAAA;
+            text-align: center;
+        }
+        .footer-btn {
+            font-size: 10px;
+            color: #AAAAAA;
+            border: 2px solid #AAAAAA;
+            width: 130px;
+            text-align: center;
+            margin-top: 7px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+        .footer-btn a {
+            color: #AAAAAA;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a class="logo" href="index.html"><img src="https://i.postimg.cc/mr1DzNqb/logocroket.png" alt="logocroket"></a>
+        <ul class="menu1">
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+        </ul>
+        <ul class="menu2">
+            <li><a href="introduce.html">우리를 소개합니다!</a></li>
+            <li><a href="seller.html">셀러이신가요?</a></li>
+            <li><a href="event.html">이벤트</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <div class="header-info">
+            <h1>전 세계 좋은 상품들을 언제든, 어디서든!</h1><br>
+            <h2>기존의 해외 직구를 넘어, 내 손안에서 전 세계 좋은 상품들을 언제든 어디서든 받아볼 수 있는 미션을 수행하고자 합니다.</h2>
+        </div>
+    </div>
+
+    <div class="intro-container">
+        <img id="introimg" src="https://i.postimg.cc/7hQPjPDX/introcroket.png" width="300px"alt="introcroket">
+        <h1>(주)와이오엘오</h1>
+        <p>와이오엘오는 <b>사람, 문화, 사회를 연결하는 개척자 정신</b>을 기반으로 운영되고 있습니다.<br>전 세계 사람들의 연결과 소통의 힘을 믿고 있습니다.</p>
+    </div>
+
+    <h3>News</h3>
+
+    <div class="news-container">
+        <div class="news">
+            <h2>해외 현지 상품을 어플 하나로... '해외 쇼핑 앱 크로켓' 앱 이용자 수 100만 돌파</h2>
+            <img class="poster" src="https://i.postimg.cc/y8bpMDCt/news1.jpg" alt="news1">
+            <p>온오프라인 크로스보더 마켓 플랫폼 '크로켓', 앱 이용자 수 100만 달성 해외쇼핑앱 '크로켓'이 지난 2021년 3월 기준으로 앱 이용자 수 100만을 돌파했다고 밝혔다.</p><br>
+            <div class="link"><a href="https://n.news.naver.com/article/029/0002668375">기사 전문 보기</a></div>
+        </div>
+        <div class="line"></div>
+        <div class="news">
+            <h2>크로스보더 마켓 플랫폼 '크로켓' 운영사 '와이오엘오', 30억 규모 시리즈A 투자 유치</h2>
+            <img class="poster" src="https://i.postimg.cc/WzdxF0VG/news2.jpg" alt="news2">
+            <p>크로스보더 마켓 플랫폼 '크로켓'을 운영하는 와이오엘오가 위벤처스를 비롯해 기존 투자사인 KB인베스트먼트, 스트롱벤처스로부터 30억 규모의 시리즈A 투자를 유치했다고 밝혔다.</p><br>
+            <div class="link"><a href="https://platum.kr/archives/161738">기사 전문 보기</a></div>
+        </div>
+        <div class="line"></div>
+        <div class="news">
+            <h2>"국경없는 쇼핑 플랫폼 도약" '크로켓' 리브랜딩 후 성장궤도, 원스톱 솔루션 구축 앞둬</h2>
+            <img class="poster" src="https://i.postimg.cc/cLR2nspb/new3.jpg" alt="news3">
+            <p>설립 5년차인 와이오엘오가 관련 업계에서 부각 받은 건 지난해부터이다. 코로나19로 해외여행이 제한되면서 구매대행 수요가 급격히 늘어난 데 따른 것이다. 크로스보더 마켓 플랫폼 '크로켓'의 이용자 수는 100만명을 달성했다.</p><br>
+            <div class="link"><a href="http://www.thebell.co.kr/free/content/ArticleView.asp?key=202104301204343120102376&svccode=00&page=1&sort=thebell_check_time">기사 전문 보기</a></div>
+        </div>
+    </div>
+    
+    <h4>Cultures</h4>
+
+    <div class="culture-container">
+        <div class="content-container">
+            <a class="content-item" href="https://www.youtube.com/watch?v=zjxDWvrlWbs">
+                <img src="https://i.postimg.cc/1RLWHdvb/culture1.png" alt="culture1">
+            </a>
+            <a class="content-item" href="https://www.youtube.com/watch?v=wE9Yatsijrc">
+                <img src="https://i.postimg.cc/HLR5gq8g/culture2.png" alt="culture2">
+            </a>
+            <a class="content-item" href="https://www.youtube.com/watch?v=6hb5TexMhTo">
+                <img src="https://i.postimg.cc/bNyZKyVn/culture3.png" alt="culture3">
+            </a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <a class="culture-button" href="https://kr.linkedin.com/company/yolocorp?trk=organization_guest_main-feed-card_feed-actor-name">더 많은 크로켓 문화 보기</a>
+
+    <div class="footer">
+        <p>(주)와이오엘오의 사전 서면 동의 없이 크로켓 사이트의 일체의 정보, 콘텐츠 및 UI등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다.<br>
+            크로켓은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 크로켓은 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+        <div class="footer-btn">
+            <a href="https://croket.s3.ap-northeast-2.amazonaws.com/img/nicepay.png">구매안전서비스확인증</a>
+        </div>
+        <p>Copyright© 2017-2023 YOLO Co, Ltd. All rights reserved.</p>
+    </div>
+</body>
+</html>

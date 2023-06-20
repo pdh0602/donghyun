@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            height: 60px;
+        }
+        .navbar .logo {
+            float: left;
+            margin-left: 50px;
+            line-height: 60px;
+            vertical-align: middle;
+        }
+        .navbar .logo img {
+            height: 20px;
+        }
+        .navbar .menu1 {
+            float: right;
+            list-style: none;
+        }
+        .navbar .menu2 {
+            float: right;
+            list-style: none;
+        }
+        .navbar .menu1 li {
+            float: left;
+            margin-right: 50px;
+            line-height: 60px;
+        }
+        .navbar .menu2 li {
+            float: left;
+            margin-right: 50px;
+            line-height: 60px;
+        }
+        .navbar .menu1 a {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #752EFF;
+        }
+        .navbar .menu1 a:hover {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            background-color: #752EFF;
+            border-radius: 5px;
+        }
+        .navbar .menu2 a {
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+        }
+        .navbar .menu2 a:hover {
+            font-size: 20px;
+            font-weight: bold;
+            border-bottom: solid 2px #752EFF;
+        }
+        .header {
+            height: 450px;
+            background-image: url("https://i.postimg.cc/mrS9VGRd/hero-header.webp");
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .login-form {
+            background-color: #EEEFF1;
+            border-radius: 10px;
+            width: 320px;
+            padding: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+        }
+        .text-field {
+            font-size: 14px;
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 2px dashed #752EFF;
+        }
+        .text-field:hover {
+            border: 2px solid #752EFF;
+        }
+        .submit-btn {
+            font-size: 14px;
+            color: #752EFF;
+            background-color: white;
+            border: 2px solid #752EFF;
+            border-radius: 10px;
+            width: 100%;
+            padding: 10px;
+        }
+        .submit-btn:hover {
+            color: white;
+            background-color: #752EFF;
+        }
+        .line {
+            border-bottom: 2px dotted #752EFF;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        .lost {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .lost a {
+            font-size: 12px;
+            color: #9B9B9B;
+            text-decoration: none;
+        }
+        .lost a:hover {
+            font-size: 12px;
+            color: #752EFF;
+        }
+        .main-info {
+            text-align: center;
+            margin-top: 60px;
+        }
+        .main-info h1 {
+            font-size: 30px;
+        }
+        .main-info h3 {
+            font-size: 22px;
+        }
+        .sns-container {
+            margin-top: 60px;
+            height: 580px;
+        }
+        .sns {
+            width: 1112px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .sns-link {
+            float: left;
+            width: 304px;
+            border: 2px dashed #752EFF;
+            margin-bottom: 100px;
+        }
+        .sns-link:hover {
+            border: 2px solid #752EFF;
+            box-shadow: 0 14px 28px rgb(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+        .sns img {
+            width: 300px;
+        }
+        .sns-link:not(:nth-child(3)) {
+            margin-right: 100px;
+        }
+        .clearfix {
+            clear: both;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            height: 150px;
+            padding-top: 35px;
+        }
+        .footer p {
+            font-size: 13px;
+            color: #AAAAAA;
+            text-align: center;
+        }
+        .footer-btn {
+            font-size: 10px;
+            color: #AAAAAA;
+            border: 2px solid #AAAAAA;
+            width: 130px;
+            text-align: center;
+            margin-top: 7px;
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+        .footer-btn a {
+            color: #AAAAAA;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a class="logo" href="index.html"><img src="https://i.postimg.cc/mr1DzNqb/logocroket.png" alt="logocroket"></a>
+        <ul class="menu1">
+            <li><a href="login.html">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+        </ul>
+        <ul class="menu2">
+            <li><a href="introduce.html">우리를 소개합니다!</a></li>
+            <li><a href="seller.html">셀러이신가요?</a></li>
+            <li><a href="event.html">이벤트</a></li>
+        </ul>
+    </div>
+
+    <div class="header">
+        <div class="login-form">
+            <form>
+            <input type="text" name="email" class="text-field" placeholder="아이디"><br>
+            <input type="password" name="password" class="text-field" placeholder="비밀번호"><br>
+            <input type="submit" value="로그인" class="submit-btn">
+            </form>
+
+            <div class="line"></div>
+
+            <div class="lost">
+                <a href="#">아이디를 잊어버리셨나요?</a><br>
+                <a href="#">비밀번호를 잊어버리셨나요?</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-info">
+        <h1>크로켓과 더 친해지는 방법~?</h1><br>
+        <h3>크로켓 콘텐츠 구독하고 핫한 해외 상품들 빠르게 겟해보세요!</h3>
+    </div>
+
+    <div class="sns-container">
+        <div class="sns">
+            <a class="sns-link" href="https://www.facebook.com/croket.official">
+                <img src="https://i.postimg.cc/26tvqdy5/facebook.png" alt="facebook">
+            <a class="sns-link" href="https://www.instagram.com/croket_official/">
+                <img src="https://i.postimg.cc/DfJQYb5k/instagram.png" alt="instagram">    
+            <a class="sns-link" href="https://blog.naver.com/letsyeogoo">
+                <img src="https://i.postimg.cc/d3Bh28td/blog.png" alt="blog">
+            </a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>(주)와이오엘오의 사전 서면 동의 없이 크로켓 사이트의 일체의 정보, 콘텐츠 및 UI등을 상업적 목적으로 전재, 전송, 스크래핑 등 무단 사용할 수 없습니다.<br>
+            크로켓은 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 크로켓은 상품·거래정보 및 거래에 대하여 책임을 지지 않습니다.</p>
+        <div class="footer-btn">
+            <a href="https://croket.s3.ap-northeast-2.amazonaws.com/img/nicepay.png">구매안전서비스확인증</a>
+        </div>
+        <p>Copyright© 2017-2023 YOLO Co, Ltd. All rights reserved.</p>
+    </div>
+</body>
+</html>
